@@ -14,7 +14,7 @@ void Console::Print(const char * str)
 }
 
 //GET INPUT FROM CONSOLE
-void Console::Read(char* name = nullptr,int arrLength = 0, int* age = nullptr)
+void Console::Read(char* name,int arrLength, int* age)
 {
 	assert((name != nullptr || age != nullptr) && "didn`t pass the argument");
 
