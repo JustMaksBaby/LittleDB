@@ -16,6 +16,7 @@ void Console::Print(const char * str)
 //GET INPUT FROM CONSOLE
 void Console::Read(char* name,int arrLength, int* age)
 {
+	// pass 'name' and 'arrLength' parameters if you plan to read a name otherwise pass 'age' parametr to get only digits from input
 	assert((name != nullptr || age != nullptr) && "didn`t pass the argument");
 
 	//if try to get a name
