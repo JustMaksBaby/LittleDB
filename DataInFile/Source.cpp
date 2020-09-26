@@ -7,6 +7,7 @@
 
 //LENGTH FOR A PERSON NAME
 const int g_NAME_SIZE = 30; 
+const int g_FILE_NAME_SIZE = 20; 
 
 //STORES SINGLE PERSON DATA
 struct PersonData
@@ -53,7 +54,15 @@ int main()
 			}break;
 			case 'a': // add data to list
 			{
+				PersonData person; 
 
+				//get name
+				Console::Print("Enter a name: "); 
+				Console::Read(person.name, g_NAME_SIZE, nullptr); 
+				
+				//get age
+				Console::Print("Enter age(0-99): "); 
+				Console::Read(nullptr, NULL, &(person.age)); 
 			}break;
 			case 'p': //print data from list
 			{
